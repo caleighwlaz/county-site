@@ -84,9 +84,56 @@ img {
  background-color: #FFF44F;
 }
 #favorite-4a {
-    color: navy;
+ color: navy;
 }
 table, thead, tr, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+
+.hidden { display: none; }
+
+button {
+ width: 80px;
+ padding: 0.6rem 0.6rem;
+ border: 2px solid navy;
+ font-size: 1rem;
+ margin-bottom: 1.5rem;
+ margin-top: 1.5rem;
+ background-color:#95C8D8;
+ border-radius: 6px;
+ color: navy;
+}
+button:hover {
+ border-color: #096B7F;
+ box-shadow: 4px 4px 2px 2px #999DA0;
+}
+
+#lat-input, #lon-input {
+ width: 280px;
+ padding: 0.6rem 0.6rem;
+ border: 1.5px solid navy;
+ font-size: 0.75rem;
+ margin-bottom: 1rem;
+ margin-top: 1rem;
+ background-color:white;
+ border-radius: 6px;
+}
+
+#lon-input {
+ margin-bottom: -1rem;
+}
+
+#reminder {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#blurb {
+    margin-top: 0rem;
+}
+
+#return {
+    font-weight: bold;
+    color: navy;
 }

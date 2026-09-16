@@ -3,22 +3,26 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coordinates – Ocean County</title>
+  <title>Coordinate Checker – Ocean County</title>
   <link rel="stylesheet" href="style.css">
  </head>
  <body>
   <h1>Are your coordinates in Ocean County?</h1>
-  <p>x</p>
+  <p id="blurb">Insert latitude and longitude values below to determine if they're in Ocean County!</p>
   <label for="latitude">Latitude:</label>
   <input id="lat-input">
-  <p>Reminder: U.S. longitudes are negative!</p>
+  <br>
   <label for="longitude">Longitude:</label>
   <input id="lon-input">
+  <p id="reminder">Reminder: U.S. longitudes are negative!</p>
+  <br>
   <button onclick="checkCoords()">Submit</button>
   <div id="result"></div>
   <script src="js/coordinates.js"></script>
   <nav>
-    <a href="index.html">Home is where the &lt3 is</a>
+   <a href="index.html">Home is where the &lt3 is</a> | 
+   <a href="towns.html">Most Populated Municipalities</a> |
+   <a href="mytown.html">My Favorite Places in Manahawkin!</a>
   </nav>
  </body>
 </html>
