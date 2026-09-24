@@ -83,3 +83,28 @@ toggleBtn.addEventListener("click", () => {
  }
  // Otherwise set it to "Hide Station"
 });
+
+let isShown = false;
+let imgElement = null;
+
+const buttonLake = document.getElementById("btn-lake");
+const lake = document.getElementById("lake");
+buttonLake.addEventListener("click", () => {
+   if(!isShown) {
+      imgElement = document.createElement("manahawkin-lake");
+      imgElement.src = 'img/manahawkin-lake.jpg';
+      imgElement.alt = "Manahawkin Lake";
+
+      lake.appendChild(imgElement);
+
+      buttonLake.textContent = "Hide Photo";
+      isShown = true;
+   }
+   else {
+      imgElement.remove();
+      imgElement = null;
+
+      buttonLake.textContent = "Show Photo";
+      isShown = false;
+   }
+})
